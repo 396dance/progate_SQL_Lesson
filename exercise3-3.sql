@@ -1,5 +1,5 @@
 -- 各商品あたりの利益が上位5件の商品の名前と利益を取得してください
-SELECT name, price
+SELECT name, price - cost AS "price - cost"
 FROM items
 ORDER BY price - cost DESC
 LIMIT 5;
